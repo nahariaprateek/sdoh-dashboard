@@ -1,0 +1,4 @@
+plan,segment,hp,hp_name
+HMO,Medicare,Aetna Advantage,Aetna Advantage
+PPO,Group,Aetna Prime,Aetna Prime
+POS,Individual,Aetna Prime,Aetna Prime
