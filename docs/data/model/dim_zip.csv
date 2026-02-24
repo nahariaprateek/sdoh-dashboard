@@ -1,0 +1,21 @@
+zip,county,state,county_clean,county_fips
+1005,Worcester,MA,Worcester,25027
+6404,Fairfield,CT,Fairfield,9001
+10001,New York,NY,New York,36061
+6001,Hartford,CT,Hartford,9003
+6231,New London,CT,New London,9011
+6073,Middlesex,CT,Middlesex,9007
+6401,New Haven,CT,New Haven,9009
+1906,Suffolk,MA,Suffolk,25025
+11201,Kings,NY,Kings,36047
+10451,Bronx,NY,Bronx,36005
+11001,Queens,NY,Queens,36081
+1746,Norfolk,MA,Norfolk,25021
+1431,Middlesex,MA,Middlesex,25017
+10301,Richmond,NY,Richmond,36085
+7003,Essex,NJ,Essex,34013
+7010,Bergen,NJ,Bergen,34003
+1810,Essex,MA,Essex,25009
+7001,Middlesex,NJ,Middlesex,34023
+7016,Union,NJ,Union,34039
+7002,Hudson,NJ,Hudson,34017
