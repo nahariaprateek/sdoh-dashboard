@@ -4261,30 +4261,6 @@ function populateZipModal(zip) {
       "<span><strong>Avg SDOH lift</strong> " + avgLift + "</span>" +
     "</div>";
 
-  function buildDriverTable(title, drivers, emptyLabel) {
-    if (!drivers.length) {
-      return "<div class='zip-driver-note'>" + emptyLabel + "</div>";
-    }
-    var table =
-      "<div class='zip-driver-table'>" +
-        "<div class='zip-driver-table-title'>" + title + "</div>" +
-        "<ul class='zip-driver-list'>" +
-          "<li class='zip-driver-item header'>" +
-            "<span>Driver</span><span>Net</span><span>Positive</span><span>Negative</span>" +
-          "</li>";
-    drivers.forEach(function(driver) {
-      table +=
-        "<li class='zip-driver-item'>" +
-          "<span class='zip-driver-name'>" + prettifyDriverName(driver.name) + "</span>" +
-          "<span class='zip-driver-value'>" + fmtSignedNumber(driver.sum, 4) + "</span>" +
-          "<span class='zip-driver-value'>" + fmtNumber(driver.posAbs, 4) + "</span>" +
-          "<span class='zip-driver-value'>" + fmtNumber(driver.negAbs, 4) + "</span>" +
-        "</li>";
-    });
-    table += "</ul></div>";
-    return table;
-  }
-
   var radarHtml =
     "<div class='zip-modal-radar-grid'>" +
       "<div class='zip-modal-radar-card'>" +
@@ -4304,11 +4280,6 @@ function populateZipModal(zip) {
         metaHtml +
       "</div>" +
       radarHtml +
-      "<div class='zip-driver-section'>" +
-        buildDriverTable("Top SDOH drivers (aggregated)", topDrivers, "No SDOH driver data available for this ZIP.") +
-        buildDriverTable("Top non-SDOH drivers (aggregated)", topNonDrivers, "No non-SDOH driver data available for this ZIP.") +
-        "<div class='zip-driver-note'>Values aggregate member-level contributions within the active filters.</div>" +
-      "</div>" +
     "</div>";
 
   container.innerHTML = heroHtml + bodyHtml;
